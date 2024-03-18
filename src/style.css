@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.textAreaMain {
+  position: relative;
+  margin: 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  color: #4b5563;
+  background-color: #F4F2EE;
+  border-radius: 0.5rem;
+  width: 450px;
+  height: auto;
+  resize: none;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 1px #e2e8f0;
+}
+
+.textarea {
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.textAreaMain .icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 90%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.generateBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem 1.25rem;
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: auto;
+}
+
+.generate-input {
+  border: 1px solid #0000000F;
+  border-radius: 8;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.message-area-main {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.message {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.sender {
+  background-color: #DFE1E7;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.receiver {
+  background-color: #DBEAFE;
+  align-self: flex-start;
+  text-align: left;
+}
